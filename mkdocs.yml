@@ -1,1 +1,11 @@
-site_name: My Docs
+site_name: Flight Dynamics Book Companion Website
+site_url: https://agodemar.github.io/Flight_Dynamics_Book_Companion
+site_description: Online companion to the book "Flight Dynamics - Theory and Practice" by ADM
+repo_url: https://github.com/agodemar/Flight_Dynamics_Book_Companion
+repo_name: Flight_Dynamics_Book_Companion
+
+nav:
+  - Home: index.md
+  - About: about.md
+
+theme: readthedocs
