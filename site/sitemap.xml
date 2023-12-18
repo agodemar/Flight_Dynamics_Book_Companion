@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://agodemar.github.io/Flight_Dynamics_Book_Companion/</loc>
-         <lastmod>2023-12-14</lastmod>
+         <lastmod>2023-12-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://agodemar.github.io/Flight_Dynamics_Book_Companion/about/</loc>
-         <lastmod>2023-12-14</lastmod>
+         <lastmod>2023-12-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://agodemar.github.io/Flight_Dynamics_Book_Companion/Chapter_01/00_aircraft_orientation/</loc>
+         <lastmod>2023-12-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

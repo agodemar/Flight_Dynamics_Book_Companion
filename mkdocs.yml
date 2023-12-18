@@ -6,6 +6,11 @@ repo_name: Flight_Dynamics_Book_Companion
 
 nav:
   - Home: index.md
+  - Chapter_01: 
+    - Chapter_01: Chapter_01/00_aircraft_orientation.ipynb
   - About: about.md
+
+plugins:
+  - mkdocs-jupyter
 
 theme: readthedocs
