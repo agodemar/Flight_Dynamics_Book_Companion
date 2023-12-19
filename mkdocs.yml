@@ -1,16 +1,42 @@
 site_name: Flight Dynamics Book Companion Website
 site_url: https://agodemar.github.io/Flight_Dynamics_Book_Companion
-site_description: Online companion to the book "Flight Dynamics - Theory and Practice" by ADM
+site_description: Online companion to the book "Flight Dynamics - Theory and Practice" by Agostino De Marco
+site_author: Agostino De Marco
 repo_url: https://github.com/agodemar/Flight_Dynamics_Book_Companion
+edit_uri: blob/master/docs/
 repo_name: Flight_Dynamics_Book_Companion
 
 nav:
   - Home: index.md
-  - Chapter_01: 
-    - Chapter_01: Chapter_01/00_aircraft_orientation.ipynb
+  - Chapter 1: 
+    - Chapter 1: Chapter_01/00_aircraft_orientation.ipynb
+  - Chapter 2:
+    - Chapter 2: Chapter_02/01_pippo.ipynb
+    - Chapter 2: Chapter_02/02_nicola.ipynb
   - About: about.md
 
 plugins:
   - mkdocs-jupyter
+  - search
 
-theme: readthedocs
+theme: 
+  name: null
+  custom_dir: 'cinder'
+  colorscheme: github
+  highlightjs: true
+  locale: en
+
+# see: https://fabacademy.org/2021/labs/bottrop/students/lars-mattern/assignments/01.%20Project%20management/5_mkdocs/
+extra_css:
+  - css/extra.css
+  - https://fonts.googleapis.com/css2?family=Noto+Serif+Toto&display=swap
+  - https://fonts.googleapis.com/css2?family=Caprasimo&display=swap
+
+# --------------- Notes, requirements
+# pip install mkdocs
+# --- https://github.com/danielfrg/mkdocs-jupyter
+# pip install mkdocs-jupyter 
+# --- https://stackoverflow.com/questions/76893872/modulenotfounderror-no-module-named-notebook-base-when-installing-nbextension
+# pip install --upgrade notebook==6.4.12
+# pip uninstall traitlets
+# pip install traitlets==5.9.0
