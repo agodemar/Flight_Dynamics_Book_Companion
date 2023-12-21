@@ -1,11 +1,99 @@
+# Copyright (c) 2023-2024 Agostino De Marco <agostino.demarco@unina.it>
+#
+
+# Project information
 site_name: Flight Dynamics Book Companion Website
 site_url: https://agodemar.github.io/Flight_Dynamics_Book_Companion
-site_description: Online companion to the book "Flight Dynamics - Theory and Practice" by Agostino De Marco
+site_description: Online companion to the book “Flight Dynamics — Theory and Practice” by ADM and AL
 site_author: Agostino De Marco
+
+# Repository information
+repo_name: Flight_Dynamics_Book_Companion
 repo_url: https://github.com/agodemar/Flight_Dynamics_Book_Companion
 edit_uri: blob/master/docs/
-repo_name: Flight_Dynamics_Book_Companion
 
+# Copyright
+copyright: Copyright &copy; 2023 - 2024 Agostino De Marco
+
+plugins:
+  - mkdocs-jupyter
+  - search
+
+theme: 
+  name: material
+  custom_dir: material/overrides
+  features:
+    - content.code.copy
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.code.select
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+  icon:
+    annotation: material/arrow-right-circle
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  font:
+    text: Noto Serif Toto # Roboto
+    code: Roboto Mono
+  locale: en
+
+#theme: 
+#  name: null
+#  custom_dir: 'cinder'
+#  colorscheme: github
+#  highlightjs: true
+#  locale: en
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+
+# see: https://fabacademy.org/2021/labs/bottrop/students/lars-mattern/assignments/01.%20Project%20management/5_mkdocs/
+extra_css:
+  - css/extra.css
+  - https://fonts.googleapis.com/css2?family=Noto+Serif+Toto&display=swap
+  - https://fonts.googleapis.com/css2?family=Caprasimo&display=swap
+
+# Navigation tree
 nav:
   - Home: index.md
   - Chapter 1: 
@@ -15,22 +103,9 @@ nav:
     - Chapter 2: Chapter_02/02_nicola.ipynb
   - About: about.md
 
-plugins:
-  - mkdocs-jupyter
-  - search
 
-theme: 
-  name: null
-  custom_dir: 'cinder'
-  colorscheme: github
-  highlightjs: true
-  locale: en
 
-# see: https://fabacademy.org/2021/labs/bottrop/students/lars-mattern/assignments/01.%20Project%20management/5_mkdocs/
-extra_css:
-  - css/extra.css
-  - https://fonts.googleapis.com/css2?family=Noto+Serif+Toto&display=swap
-  - https://fonts.googleapis.com/css2?family=Caprasimo&display=swap
+
 
 # --------------- Notes, requirements
 # pip install mkdocs
@@ -40,3 +115,8 @@ extra_css:
 # pip install --upgrade notebook==6.4.12
 # pip uninstall traitlets
 # pip install traitlets==5.9.0
+
+# --------------- Notes, site admin
+# 1. mkdocs serve --> to work locally
+# 2. mkdocs gh-deploy --> to deploy to github, online version
+# 3. commit and push to github the changes in the repository
