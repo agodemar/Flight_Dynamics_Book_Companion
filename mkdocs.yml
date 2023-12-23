@@ -111,7 +111,8 @@ nav:
   - Getting Started: Chapter_00/introduction.md
   - Aircraft motion in space: 
     - Theory recap: Chapter_01/00_aircraft_motion_in_space.md
-    - Attitude in space: Chapter_01/01_aircraft_orientation.ipynb
+    - Attitude in space (1): Chapter_01/01_aircraft_orientation.ipynb
+    - Attitude in space (2): Chapter_01/02_aircraft_orientation.ipynb
   - Aerodynamic & engine models:
     - Theory recap: Chapter_02/00_aircraft_aerodynamic_engine_models.md
     - Chapter 2: Chapter_02/01_pippo.ipynb
