@@ -25,8 +25,8 @@ theme:
   features:
     - content.code.copy
     - announce.dismiss
-    - content.action.edit
-    - content.action.view
+    # - content.action.edit
+    # - content.action.view
     - content.code.annotate
     - content.code.copy
     # - content.code.select
@@ -85,32 +85,73 @@ theme:
 markdown_extensions:
   - attr_list
   - md_in_html
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.arithmatex:
+      generic: true
+
 
 # see: https://fabacademy.org/2021/labs/bottrop/students/lars-mattern/assignments/01.%20Project%20management/5_mkdocs/
 extra_css:
-  - css/extra.css
+  - stylesheets/extra.css
   - https://fonts.googleapis.com/css2?family=Noto+Serif+Toto&display=swap
   - https://fonts.googleapis.com/css2?family=Caprasimo&display=swap
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 # Navigation tree
 nav:
   - Home: index.md
-  - Chapter 1: 
-    - Chapter 1: Chapter_01/00_aircraft_orientation.ipynb
-  - Chapter 2:
+  - Getting Started: Chapter_00/introduction.md
+  - Aircraft motion in space: 
+    - Theory recap: Chapter_01/00_aircraft_motion_in_space.md
+    - Attitude in space: Chapter_01/01_aircraft_orientation.ipynb
+  - Aerodynamic & engine models:
+    - Theory recap: Chapter_02/00_aircraft_aerodynamic_engine_models.md
     - Chapter 2: Chapter_02/01_pippo.ipynb
     - Chapter 2: Chapter_02/02_nicola.ipynb
+  - Static stability & control:
+    - Theory recap: Chapter_03/00_static_stability_control.md
+  - Dynamics:
+    - Theory recap: Chapter_04/00_dynamics.md
+  - Linearized dynamics:
+    - Theory recap: Chapter_05/00_linearized_dynamics.md
+  - Miscellanea:
+    - Chapter_06/00_miscellanea.md
   - About: about.md
 
 
 
-
-
 # --------------- Notes, requirements
+#
+# --- Make/activate a new conda environment: fdb-companion
+#
+# conda create -n fdb-companion
+# conda activate fdb-companion
+#
+# --- Install basic stuff
+#
+# conda install pip
+# conda install -c conda-forge jupyterlab
+#
+# --- Install jupyterlab extension for Matlab
+#
+# pip install jupyter-matlab-proxy
+#
+# --- Install MkDocs and MkDocs-Jupyter
+#
 # pip install mkdocs
+#
 # --- https://github.com/danielfrg/mkdocs-jupyter
+#
 # pip install mkdocs-jupyter 
+#
 # --- https://stackoverflow.com/questions/76893872/modulenotfounderror-no-module-named-notebook-base-when-installing-nbextension
 # pip install --upgrade notebook==6.4.12
 # pip uninstall traitlets
