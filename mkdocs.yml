@@ -1,4 +1,5 @@
-# Copyright (c) 2023-2024 Agostino De Marco <agostino.demarco@unina.it>
+#
+# Copyright (c) 2023-2024 Agostino De Marco <agostino.demarco@unina.it>, University of Naples Federico II
 #
 
 # Project information
@@ -74,13 +75,6 @@ theme:
     text: Noto Serif Toto # Roboto
     code: Roboto Mono
   locale: en
-
-#theme: 
-#  name: null
-#  custom_dir: 'cinder'
-#  colorscheme: github
-#  highlightjs: true
-#  locale: en
 
 markdown_extensions:
   - attr_list
@@ -160,5 +154,7 @@ nav:
 
 # --------------- Notes, site admin
 # 1. mkdocs serve --> to work locally
-# 2. mkdocs gh-deploy --> to deploy to github, online version
-# 3. commit and push to github the changes in the repository
+# 2. commit and push to github the changes in the repository
+# 3. mkdocs gh-deploy --> to deploy to github, online version
+#    This feature is now replaced by the CI workflow - see ./github/workflows/ci.yml -
+#    that automatically deploys the website to github pages when a push is made to the master branch
