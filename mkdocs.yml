@@ -86,6 +86,13 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.details
+  - pymdownx.superfences
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 
 # see: https://fabacademy.org/2021/labs/bottrop/students/lars-mattern/assignments/01.%20Project%20management/5_mkdocs/
@@ -107,6 +114,7 @@ nav:
     - Theory recap: Chapter_01/00_aircraft_motion_in_space.md
     - Attitude in space (1): Chapter_01/01_aircraft_orientation.ipynb
     - Attitude in space (2): Chapter_01/02_aircraft_orientation.ipynb
+    - Attitude in space (3): Chapter_01/03_aircraft_orientation_weight_force.ipynb
   - Aerodynamic & engine models:
     - Theory recap: Chapter_02/00_aircraft_aerodynamic_engine_models.md
     - Chapter 2: Chapter_02/01_pippo.ipynb
