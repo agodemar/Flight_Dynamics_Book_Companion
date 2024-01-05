@@ -119,6 +119,7 @@ nav:
     - Theory recap: Chapter_02/00_aircraft_aerodynamic_engine_models.md
     - Chapter 2: Chapter_02/01_pippo.ipynb
     - Chapter 2: Chapter_02/02_nicola.ipynb
+    - Test export .mlx to .ipynb: Chapter_02/test_0.ipynb
   - Static stability & control:
     - Theory recap: Chapter_03/00_static_stability_control.md
   - Dynamics:

@@ -19,4 +19,6 @@ ADM is one of the maintainers and developers of [JSBSim](https://github.com/JSBS
 
 ## Author 2
 
+Angelo Lerro
+
 TBD
