@@ -1,0 +1,17 @@
+/* Customization: agodemar */
+
+h1, h2, h3 {
+    font-family:'Caprasimo', serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #222;
+}
+
+.md-grid {
+    max-width: 1600px; /* 1440px; initial; */
+}
+
+/* Noto Serif Toto */
+:root {
+    --md-text-font-size: 1.2rem;
+}
